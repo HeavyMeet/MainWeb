@@ -1,0 +1,32 @@
+{
+  "name": "main_web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@react-spring/parallax": "^9.7.2",
+    "googleapis": "^114.0.0",
+    "locomotive-scroll": "^4.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-drive-picker": "^1.2.0",
+    "react-locomotive-scroll": "^0.2.2",
+    "react-parallax": "^3.5.1",
+    "react-scroll": "^1.8.9",
+    "react-switch": "^7.0.0",
+    "rellax": "^1.12.1",
+    "tslib": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.1.0"
+  }
+}
