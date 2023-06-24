@@ -63,7 +63,7 @@ useEffect(() => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <h1 className="span1" style={{color:theme === "dark" ? '#9abddf':'#1f1919',textShadow:theme?'12px 12px 3px rgb(63, 84, 105)':'12px 12px 3px rgba(89, 72, 72, 0.6)'}} data-scroll>
         <span data-scroll data-scroll-delay='0.15' data-scroll-speed='5'>E</span>
         <span data-scroll data-scroll-delay='0.095' data-scroll-speed='5'>r</span>
@@ -92,7 +92,7 @@ useEffect(() => {
              <a href='https://drive.google.com/file/d/1Y_PhKCNzokQLB0OIQCIYpA4PQScGjIsL/view?usp=sharing' target="_blank">My CV</a>
              </span>
         </h1>
-        </div>   
+        </div>    */}
       </>
       )
 }
