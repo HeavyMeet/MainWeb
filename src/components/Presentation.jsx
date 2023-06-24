@@ -80,9 +80,9 @@ useEffect(() => {
             </h1>
           </div></>
         : <>
-        <h2 style={{ color: theme === "dark" ? '#9abddf' : '#1f1919', textShadow: theme ? '12px 12px 3px rgb(63, 84, 105)' : '12px 12px 3px rgba(89, 72, 72, 0.6)'}}>
+        <h1 style={{ color: theme === "dark" ? '#9abddf' : '#1f1919', textShadow: theme ? '12px 12px 3px rgb(63, 84, 105)' : '12px 12px 3px rgba(89, 72, 72, 0.6)'}}>
           <span style={{fontSize:'45px'}}>Erick Real</span>
-        </h2>
+        </h1>
         <h3>
             <span style={{fontSize:'35px'}}>Web & Mobile Developer</span>
           </h3>
