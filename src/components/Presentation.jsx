@@ -86,7 +86,7 @@ useEffect(() => {
         <h3>
             <span style={{fontSize:'35px'}}>Web & Mobile Developer</span>
           </h3>
-          <h4 style={{ padding: '0', margin: '70px 0px 0 10px' }}>
+          <h4 style={{ padding: '0', margin: '0px 0px 0 10px' }}>
               <span style={{fontSize:'25px'}}>
                 <a href='https://drive.google.com/file/d/1Y_PhKCNzokQLB0OIQCIYpA4PQScGjIsL/view?usp=sharing' target="_blank">My CV</a>
               </span>
