@@ -85,9 +85,19 @@ useEffect(() => {
           Web & Mobile Developer
         </span>
         </h1>
+        </div>
+        <div>
+        <h1 style={{padding:'0', margin:'70px 0px 0 10px'}}>
+        <span className='span4' data-scroll data-scroll-direction="vertical" data-scroll-delay="0.05" data-scroll-speed="5">
+             <a href='https://drive.google.com/file/d/1Y_PhKCNzokQLB0OIQCIYpA4PQScGjIsL/view?usp=sharing' target="_blank">My CV</a>
+             </span>
+        </h1>
         </div>   
       </>
       )
 }
 
 export default Presentation
+
+
+   {/* <a href='https://drive.google.com/file/d/1Y_PhKCNzokQLB0OIQCIYpA4PQScGjIsL/view?usp=sharing' target="_blank">My CV</a> */}

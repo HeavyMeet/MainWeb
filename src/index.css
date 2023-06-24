@@ -271,6 +271,11 @@ h1 {
   font: bold 50px arial, sans-serif;
 } 
 
+.span4{
+  position: absolute;
+  font: bold 35px arial, sans-serif;
+} 
+
 @media only screen and (max-width: 1381px) {
 
   .prub {
@@ -422,6 +427,7 @@ h1 {
   display:flex;
   justify-content:center;
   padding: 30px;
+  margin-bottom: 200px;
 }
 
 .form{
