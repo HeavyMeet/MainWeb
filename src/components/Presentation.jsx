@@ -43,7 +43,7 @@ useEffect(() => {
      div.append(drop);
    }
  }
- back(); 
+//  back(); 
 },[theme]);
 
  const generatePublicUrl = async () => {
