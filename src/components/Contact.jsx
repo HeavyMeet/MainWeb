@@ -12,7 +12,7 @@ const Contact = () => {
   const [color, setColor] = useState('');
   const [filter, setFilter] = useState('');
   const social_net = [{ id: 1, link:'//www.linkedin.com/in/erick-d-573560212/', logo: linkedin }, { id: 2, link:'https://github.com/HeavyMeet',logo: github }, { id: 3, link:'https://twitter.com/____DanyBoy', logo: twitter }]
-
+  const userAgent = navigator.userAgent;
   useEffect(() => {
     if (theme === 'dark') {
       setColor('white')
