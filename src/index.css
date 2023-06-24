@@ -1,5 +1,5 @@
 body {
-  font-family: wotfardregular, Tahoma,Geneva,Segoe UI,Roboto,Helvetica;
+  font-family: wotfardregular, Tahoma, Geneva, Segoe UI, Roboto, Helvetica;
   font-size: 1.6rem;
   overflow-x: hidden;
   padding: 0px;
@@ -11,8 +11,8 @@ body {
   font-family: 'wotfardregular';
   src: url('assets/wotfard-regular-webfont.eot');
   src: url('assets/wotfard-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('assets/wotfard-regular-webfont.woff2') format('woff2'),
-       url('assets/wotfard-regular-webfont.ttf') format('truetype');
+    url('assets/wotfard-regular-webfont.woff2') format('woff2'),
+    url('assets/wotfard-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 
@@ -45,11 +45,11 @@ body {
 /* Navbar */
 
 .topnav {
-  display: flex;   
-  flex-direction: row;         
-  flex-wrap: nowrap;             
-  justify-content: space-between; 
-  align-items:flex-end; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #original {
@@ -60,7 +60,7 @@ body {
   left: 0;
   padding: 10px;
   margin: 15px;
-  height:60px;
+  height: 60px;
   background-color: #7e7a7a;
   opacity: 0.3;
   border-radius: 25px;
@@ -76,7 +76,7 @@ body {
   left: 0;
   margin: 15px;
   opacity: 0.3;
-  height:55px;
+  height: 55px;
   border-radius: 25px;
   filter: blur(5px);
   z-index: 0;
@@ -96,6 +96,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 /* Desktop Menu */
 .menu {
   position: relative;
@@ -125,75 +126,75 @@ h1 {
 #in {
   /* position:relative; */
   padding: 10px 150px;
-  margin:200px 0 200px 0;
+  margin: 200px 0 200px 0;
 }
 
 @media only screen and (max-width: 722px) {
   #in {
     padding: 0;
-    margin:50px 0 250px;
+    margin: 50px 0 250px;
   }
 
   .content {
     padding: 0;
-    margin:0;
+    margin: 0;
   }
 
   .topnav {
-    display: flex;   
-    justify-content:flex-end; 
+    display: flex;
+    justify-content: flex-end;
   }
 
   .menu {
     position: absolute;
-    top:0;
-    left:0;
-    display:block;
+    top: 0;
+    left: 0;
+    display: block;
     border: none;
     background: transparent;
     font-size: 36px;
     margin-left: -25px;
-    width:100%;
+    width: 100%;
     color: #fff;
     cursor: pointer;
     z-index: 100;
   }
 
   .menu a {
-    display:block;
-    top:0;
+    display: block;
+    top: 0;
     margin-top: -15px;
   }
 
-  .switch{
+  .switch {
     display: none;
   }
 
-  .switch1{
+  .switch1 {
     display: inline-flex;
     height: 30px;
-    margin-bottom:30%;
+    margin-bottom: 30%;
     padding: 30px 40px;
     width: 55px;
     z-index: 100;
-     }
+  }
 
-     .other{
-      position: absolute;
-      top:-10px;
-      right:0;
-      left:0;
-      bottom:0;
-      height: 40%;
-      margin: 0 35px;
-      opacity: 0.3;
-      border-radius: 25px;
-      z-index: 0;
-      }
+  .other {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 40%;
+    margin: 0 35px;
+    opacity: 0.3;
+    border-radius: 25px;
+    z-index: 0;
+  }
 }
 
 #my {
-  position:absolute;
+  position: absolute;
   padding: 15px;
   border-radius: 50%;
   filter: blur(20px);
@@ -202,7 +203,7 @@ h1 {
   animation: animate 11s linear infinite;
 }
 
-#anim{
+#anim {
   bottom: -140px;
   right: 150px;
   content: url(../src//assets/mano.gif);
@@ -211,18 +212,19 @@ h1 {
 }
 
 
-.span1,.span2 {
+.span1,
+.span2 {
   display: inline-block;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .span1 span {
   position: relative;
-  width:42px;
+  width: 42px;
   display: inline-flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   margin-right: 0;
   padding: 0;
   font: bold 80px arial, sans-serif;
@@ -230,52 +232,55 @@ h1 {
 
 .span2 span {
   position: relative;
-  width:45px;
+  width: 45px;
   height: 2%;
   display: inline-flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   margin-right: 0;
   padding: 0;
   font: bold 80px arial, sans-serif;
 }
 
-.span1 span:nth-child(2){
-  top:1px;
+.span1 span:nth-child(2) {
+  top: 1px;
 }
-.span1 span:nth-child(3){
-  width:20px;
-  top:2px;
-} 
 
-.span1 span:nth-child(4),.span1 span:nth-child(5){
-  width:45px;
-  top:2px;
-} 
+.span1 span:nth-child(3) {
+  width: 20px;
+  top: 2px;
+}
 
-.span2 span:nth-child(3){
-  width:60px;
-  top:2px;
-} 
+.span1 span:nth-child(4),
+.span1 span:nth-child(5) {
+  width: 45px;
+  top: 2px;
+}
 
-.span2 span:nth-child(4){
-  width:30px;
-  top:2px;
-} 
+.span2 span:nth-child(3) {
+  width: 60px;
+  top: 2px;
+}
 
-.span2 span:nth-child(5){
-  width:35px;
-  top:3px;
-} 
-.span3{
+.span2 span:nth-child(4) {
+  width: 30px;
+  top: 2px;
+}
+
+.span2 span:nth-child(5) {
+  width: 35px;
+  top: 3px;
+}
+
+.span3 {
   position: absolute;
   font: bold 50px arial, sans-serif;
-} 
+}
 
-.span4{
+.span4 {
   position: absolute;
   font: bold 35px arial, sans-serif;
-} 
+}
 
 @media only screen and (max-width: 1381px) {
 
@@ -284,14 +289,14 @@ h1 {
     margin: 90px 0 400px 0;
   }
 
-  #anim{
+  #anim {
     content: url(../src//assets/manl.gif);
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top:120%;
+    top: 120%;
   }
 }
 
@@ -302,14 +307,14 @@ h1 {
     margin: 130px 100px 400px 0;
   }
 
-  #anim{
+  #anim {
     content: url(../src//assets/manl.gif);
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top:120%;
+    top: 120%;
   }
 }
 
@@ -318,29 +323,29 @@ h1 {
   .content {
     padding: 0;
   }
-  
+
   .prub {
     position: relative;
     margin: 150px 0 400px 0;
   }
 
-  #ti{
+  #ti {
     font-size: 46px;
     left: 40px;
   }
 
-  #ti::after{
+  #ti::after {
     font-size: 35px;
   }
 
-  #anim{
+  #anim {
     content: url(../src//assets/manl.gif);
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top:120%;
+    top: 120%;
   }
 }
 
@@ -348,20 +353,22 @@ h1 {
   0% {
     left: -15%;
   }
+
   100% {
     left: 110%;
   }
+
   /* 100% { transform: translateX(100px); } */
 }
 
 /* Portfolio */
 
-.titles{
+.titles {
   position: relative;
   display: flex;
   padding: 0;
-  margin:0;
-  justify-content:center;
+  margin: 0;
+  justify-content: center;
   font-size: 1.6em;
   z-index: -1
 }
@@ -372,12 +379,12 @@ h1 {
 }
 
 .grid-item {
-  padding:10px;
-  overflow:hidden;
+  padding: 10px;
+  overflow: hidden;
   position: relative;
 }
 
-.stack-div{
+.stack-div {
   border-radius: 15px;
   padding: 25px 25px 15px 5px;
   background-image: url(../src/assets/back_stack.png)
@@ -388,13 +395,13 @@ h1 {
   padding: 0px;
 }
 
-.pp{
+.pp {
   display: inline;
   padding-right: 9px;
   font-size: 21px;
 }
 
-.descrip{
+.descrip {
   margin: 15px;
   padding: 9px;
   font-size: 21px;
@@ -402,35 +409,35 @@ h1 {
   word-wrap: break-word;
 }
 
-.img-stack{
+.img-stack {
   display: inline-block;
-  border-radius:15px;
+  border-radius: 15px;
   background-color: #989f93;
   padding: 10px;
 }
 
-.img-stackd{
+.img-stackd {
   display: inline-block;
   padding: 5px;
 }
 
 .img-r {
-  vertical-align:sub;
+  vertical-align: sub;
 }
 
 .no_margin {
-  padding:0 24px 0px;
-  margin:0px;
+  padding: 0 24px 0px;
+  margin: 0px;
 }
 
 /* About */
 .flex-container {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   padding: 30px;
 }
 
-.form{
+.form {
   padding: 20px 130px 0 60px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -438,16 +445,17 @@ h1 {
 .con {
   text-align: center;
   padding-top: 20px 0 0 0;
+  margin: 0;
   /* To horizontally center a block element (like <div>), use margin: auto; */
   /* margin: auto; */
 }
 
 p {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.form_label{
+.form_label {
   text-align: end;
 }
 
@@ -460,12 +468,12 @@ p {
 .center {
   display: flex;
   justify-content: center;
-  padding:10px;
+  padding: 10px;
 }
 
 .grid-item1 {
-  padding:9px 10px;
-  overflow:hidden;
+  padding: 9px 10px;
+  overflow: hidden;
 }
 
 #textarea {
@@ -497,61 +505,68 @@ p {
   position: relative;
 }
 
-.textarea-container > div, .textarea-container > textarea {
-  word-wrap: break-word; /* make sure the div and the textarea wrap words in the same way */
+.textarea-container>div,
+.textarea-container>textarea {
+  word-wrap: break-word;
+  /* make sure the div and the textarea wrap words in the same way */
   box-sizing: border-box;
   padding: 2px;
   width: 100%;
 }
 
-.textarea-container > textarea {
+.textarea-container>textarea {
   overflow: hidden;
   position: absolute;
   height: 100%;
 }
 
-.textarea-container > div {
-  padding-bottom: 1.5em; /* A bit more than one additional line of text. */ 
+.textarea-container>div {
+  padding-bottom: 1.5em;
+  /* A bit more than one additional line of text. */
   visibility: hidden;
 }
 
 .grid_label {
-  padding:10px;
+  padding: 10px;
   padding-left: 0;
-  overflow:hidden;
+  overflow: hidden;
   text-align: end;
 }
 
-.svg{
+.sn_div {
+  margin-left: 2em;
+}
+
+.svg {
   display: block;
-  font   : bold 60px Century Gothic, Arial;
-  width  : 300px;
-  height : 120px;
-  margin:0;
+  font: bold 60px Century Gothic, Arial;
+  width: 300px;
+  height: 120px;
+  margin: 0;
 }
 
-.svg1{
+.svg1 {
   display: block;
-  font   : bold 42px Century Gothic, Arial;
-  width  : 413px;
-  height : 120px;
+  font: bold 42px Century Gothic, Arial;
+  width: 413px;
+  height: 120px;
 }
 
-text{
-  fill            : none;
-  stroke-width    : 2px;
-  stroke-linejoin : round;
-  animation       : 8s pulsate infinite;
+text {
+  fill: none;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  animation: 8s pulsate infinite;
 }
 
-.sn{
+.sn {
   display: flex;
   justify-content: start;
-  margin-left: 70px;
+  margin-left: 2em;
 }
 
-.snww{
-  display:inline-flex;
+.snww {
+  display: inline-flex;
   margin-top: 20px;
   padding-right: 20px;
 }
@@ -562,66 +577,110 @@ text{
 }
 
 @keyframes pulsate {
-  50%{ stroke-width:5px }
+  50% {
+    stroke-width: 5px
+  }
 }
 
 @keyframes pulsat {
-  50%{ stroke-width:3.5px }
+  50% {
+    stroke-width: 3.5px
+  }
 }
 
 .img_social_net {
-  width:4em;
+  width: 4em;
 }
 
 @media only screen and (max-width: 550px) {
-  .svg{
-   font   : bold 40px Century Gothic, Arial;
-   margin:0;
- }
- 
- .svg1{
-   font   : bold 28px Century Gothic, Arial;
- }
+  .content {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .flex-container {
+    padding: 0;
+    margin: 0;
+  }
 
- .snww{
-  margin-top: -10px;
+  .sn_div {
+    margin-left: 0.5em;
+  }
+
+  .sn {
+    margin-left: 0.8em;
+  }
+
+  .con{
+    padding: 0;
+    margin: 0;
+  }
+
+  .form {
+    padding: 0px 130px 0 10px;
+  }
+
+  .svg {
+    font: bold 35px Century Gothic, Arial;
+    margin: 0;
+    padding: 0;
+  }
+
+  .svg1 {
+    font: bold 24.5px Century Gothic, Arial;
+    margin: 0;
+    padding: 0;
+  }
+
+  .snww {
+    margin-top: -30px;
+  }
+
+  .text_sn {
+    transform: translate(0, 15px);
+  }
+  
+
+  @keyframes pulsate {
+    50% {
+      stroke-width: 4px
+    }
+  }
+
+  @keyframes pulsat {
+    50% {
+      stroke-width: 2.5px
+    }
+  }
+
+  .img_social_net {
+    width: 2em;
+  }
+
 }
 
- @keyframes pulsate {
-  50%{ stroke-width:4px }
-}
-
-@keyframes pulsat {
-  50%{ stroke-width:2.5px }
-}
-
-.img_social_net {
-  width:2em;
-}
-
- }
-
-input[type=text], input[type=email]{
+input[type=text],
+input[type=email] {
   font-size: large;
 }
 
-input[type=submit]{
+input[type=submit] {
   font-size: large;
 }
 
 header {
   width: 100vw;
-  
+
   color: #fff;
   background-color: #000;
-  
+
   position: sticky;
   z-index: 1;
 }
 
 /* GOT TO TOP */
-#stick{
-  position:relative;
+#stick {
+  position: relative;
 }
 
 .stic {
@@ -633,10 +692,10 @@ header {
 
 }
 
-.arrow{
+.arrow {
   background-color: transparent;
   border: transparent;
-  cursor:pointer;
+  cursor: pointer;
   animation: movebtn 10s ease-in-out infinite;
 }
 
@@ -671,41 +730,45 @@ header {
   right: 0;
   width: 46px;
   height: 48px;
-  border:transparent;
-  background-color: #25d366; 
+  border: transparent;
+  background-color: #25d366;
   border-radius: 48px;
   z-index: -1;
 }
 
 @keyframes movebtn {
-  0%{
+  0% {
     transform: translateY(0px);
   }
-  25%{
+
+  25% {
     transform: translateY(52px);
   }
-  50%{
+
+  50% {
     transform: translateY(0px);
   }
-  75%{
+
+  75% {
     transform: translateY(52px);
   }
-  100%{
+
+  100% {
     transform: translateY(0px);
   }
 }
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 1120px) {
-  h2{
-  font-size: 1.6rem;
+  h2 {
+    font-size: 1.6rem;
   }
 
   .titles {
     padding: 40px 45px;
   }
 
-  #portfolio{
+  #portfolio {
     display: flex;
     margin: 10px;
     justify-content: center;
@@ -732,17 +795,17 @@ header {
   }
 
   .grid_label {
-    padding-left:10px;
+    padding-left: 10px;
     padding: 0%;
-    text-align:left;
-    overflow:hidden;
+    text-align: left;
+    overflow: hidden;
   }
 
   .flex-container {
-    display:block;
+    display: block;
   }
 
-  .form{
+  .form {
     margin-bottom: 80px;
   }
 
@@ -792,24 +855,26 @@ html.has-scroll-dragging {
   opacity: 0;
 }
 
-  .c-scrollbar:hover {
-    transform: scaleX(1.45);
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
 }
 
-  .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
-    opacity: 1;
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
 }
 
 [data-scroll-direction="horizontal"] .c-scrollbar {
-    width: 100%;
-    height: 10px;
-    top: auto;
-    bottom: 0;
-    transform: scaleY(1);
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  transform: scaleY(1);
 }
 
 [data-scroll-direction="horizontal"] .c-scrollbar:hover {
-      transform: scaleY(1.3);
+  transform: scaleY(1.3);
 }
 
 .c-scrollbar_thumb {
@@ -824,11 +889,13 @@ html.has-scroll-dragging {
   cursor: -webkit-grab;
   cursor: grab;
 }
-  .has-scroll-dragging .c-scrollbar_thumb {
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
-  [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
-    right: auto;
-    bottom: 0;
+
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
 }

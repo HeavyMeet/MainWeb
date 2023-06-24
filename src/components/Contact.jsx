@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
         </form>
         <div className='con'>
-          <div style={{ marginLeft: '70px' }}>
+          <div className='sn_div'>
             <svg className='svg' viewBox="0 11 190 12">
               <text style={{ stroke: color }} y='50'>Social</text>
             </svg>

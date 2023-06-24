@@ -99,5 +99,3 @@ useEffect(() => {
 
 export default Presentation
 
-
-   {/* <a href='https://drive.google.com/file/d/1Y_PhKCNzokQLB0OIQCIYpA4PQScGjIsL/view?usp=sharing' target="_blank">My CV</a> */}
