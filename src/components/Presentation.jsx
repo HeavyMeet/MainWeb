@@ -80,11 +80,11 @@ useEffect(() => {
             </h1>
           </div></>
         : <>
-        <h2 className="span1" style={{ color: theme === "dark" ? '#9abddf' : '#1f1919', textShadow: theme ? '12px 12px 3px rgb(63, 84, 105)' : '12px 12px 3px rgba(89, 72, 72, 0.6)', fontSize:'50px' }}>
-          <span>Erick Real</span>
+        <h2 style={{ color: theme === "dark" ? '#9abddf' : '#1f1919', textShadow: theme ? '12px 12px 3px rgb(63, 84, 105)' : '12px 12px 3px rgba(89, 72, 72, 0.6)'}}>
+          <span> span style={{fontSize:'45px'}}Erick Real</span>
         </h2>
-        <h3 className="span1" style={{ color: theme === "dark" ? '#9abddf' : '#1f1919', textShadow: theme ? '12px 12px 3px rgb(63, 84, 105)' : '12px 12px 3px rgba(89, 72, 72, 0.6)', fontSize:'40px' }}>
-            <span>Web & Mobile Developer</span>
+        <h3 style={{ padding: '0', margin: '0' }}>
+            <span style={{fontSize:'35px'}}>Web & Mobile Developer</span>
           </h3>
           <h4 style={{ padding: '0', margin: '70px 0px 0 10px' }}>
               <span style={{fontSize:'25px'}}>
