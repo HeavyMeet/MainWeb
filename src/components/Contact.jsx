@@ -46,23 +46,23 @@ const Contact = () => {
               <label htmlFor='name'>Name:</label>
             </div>
             <div className='grid-item1'>
-              <input type="text" name="user_name" />
+              <input style={{height:'30px'}} type="text" name="user_name" />
             </div>
             <div className='grid_label'>
               <label htmlFor='email'>Email:</label>
             </div>
             <div className='grid-item1'>
-              <input type="email" name="user_email" />
+              <input style={{height:'30px'}} type="email" name="user_email" />
             </div>
             <div className='grid_label'>
               <label htmlFor='message'>Message:</label>
             </div>
             <div className="textarea-container">
-              <textarea id="textArea"></textarea>
+              <textarea style={{height:'140px'}}></textarea>
               <div id="textCopy"></div>
             </div>
           </div>
-          <div className='center'>
+          <div className='center c1'>
             <input
               type="submit"
               value='Send Me a Message' />

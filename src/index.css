@@ -471,9 +471,18 @@ p {
   padding: 10px;
 }
 
+.c1{
+  margin-top: 100px;
+}
+
 .grid-item1 {
-  padding: 9px 10px;
+  padding: 15px 10px;
   overflow: hidden;
+}
+
+.grid_label {
+  padding: 15px 10px;
+  text-align: end;
 }
 
 #textarea {
@@ -503,6 +512,7 @@ p {
 
 .textarea-container {
   position: relative;
+  padding: 15px 10px;
 }
 
 .textarea-container>div,
@@ -524,13 +534,6 @@ p {
   padding-bottom: 1.5em;
   /* A bit more than one additional line of text. */
   visibility: hidden;
-}
-
-.grid_label {
-  padding: 10px;
-  padding-left: 0;
-  overflow: hidden;
-  text-align: end;
 }
 
 .sn_div {
@@ -655,6 +658,26 @@ text {
 
   .img_social_net {
     width: 2em;
+  }
+
+  .grid-container1 {
+    width: 100%;
+    display:block;
+  }
+
+  .grid_label {
+    margin: auto;
+  }
+
+  .grid-item1 {
+    padding-left: 10px;
+    overflow: hidden;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    padding: 10% 0 10% 40%;
   }
 
 }
