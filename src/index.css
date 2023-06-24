@@ -460,29 +460,43 @@ p {
 }
 
 .grid-container1 {
-  width: 500px;
+  width: 23rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
 }
 
 .center {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  align-self: center;
+  padding: 0 0 0px 100px;
 }
 
 .c1{
-  margin-top: 100px;
+  margin-top: 110px;
+  margin-bottom: 20px;
+}
+
+.input {
+  height:30px;
+  min-width: 320px;
+  box-sizing: border-box;
 }
 
 .grid-item1 {
   padding: 15px 10px;
+  width: 330px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .grid_label {
   padding: 15px 10px;
   text-align: end;
+}
+
+textarea {
+  font-size: large;
 }
 
 #textarea {
@@ -496,19 +510,6 @@ p {
   box-sizing: border-box;
   resize: vertical;
 }
-
-/* #textarea {
-  display: block;
-  margin: 0;
-  padding: 8px;
-  border: 2px solid black;
-  width: 50%;
-  min-width: 40px;
-  overflow: hidden;
-  box-sizing: border-box;
-  resize: vertical;
-} */
-
 
 .textarea-container {
   position: relative;
@@ -578,6 +579,18 @@ text {
   animation: 8s pulsat infinite;
   transform: translate(0, 20px);
 }
+
+.border-with-grad {
+  box-shadow: 0 0 0 0.2rem rgba(74, 32, 94, 0.5);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
 
 @keyframes pulsate {
   50% {
@@ -665,13 +678,14 @@ text {
     display:block;
   }
 
-  .grid_label {
-    margin: auto;
-  }
-
   .grid-item1 {
     padding-left: 10px;
     overflow: hidden;
+  }
+
+  .grid_label {
+    display: flex;
+    justify-content: center;
   }
 
   .center {
@@ -679,7 +693,6 @@ text {
     justify-content: center;
     padding: 10% 0 10% 40%;
   }
-
 }
 
 input[type=text],

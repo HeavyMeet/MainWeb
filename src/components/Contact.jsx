@@ -14,12 +14,27 @@ const Contact = () => {
   const social_net = [{ id: 1, link:'//www.linkedin.com/in/erick-real-573560212/', logo: linkedin }, { id: 2, link:'https://github.com/HeavyMeet',logo: github }, { id: 3, link:'https://twitter.com/____DanyBoy', logo: twitter }]
   const userAgent = navigator.userAgent;
   useEffect(() => {
+    const btnForm = document.querySelector(".border-with-grad");
     if (theme === 'dark') {
       setColor('white')
       setFilter('invert(90%)')
+      btnForm.style.color = "#9ABDDF";
+      btnForm.addEventListener("mouseenter", function( event ) {   
+        event.target.style.textShadow = "0 0 20px #4d5fff, 0 0 15px #1e406d, 0 0 15px #276bc4";
+      }, false);
+      btnForm.addEventListener("mouseleave", function( event ) {   
+        event.target.style.textShadow = "";
+      }, false);  
     } else {
       setColor('#403d3d')
       setFilter('invert(15%)')
+      btnForm.style.color = "rgba(31, 25, 25, 0.7)";
+      btnForm.addEventListener("mouseenter", function( event ) {   
+        event.target.style.textShadow = "0 0 20px #9a9777, 0 0 15px #49332d, 0 0 15px #aa885e";
+      }, false);
+      btnForm.addEventListener("mouseleave", function( event ) {   
+        event.target.style.textShadow = "";
+      }, false);
     }
   }, [theme]);
 
@@ -31,6 +46,8 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
+    form.current.reset();
+
   }
 
   return (
@@ -46,13 +63,13 @@ const Contact = () => {
               <label htmlFor='name'>Name:</label>
             </div>
             <div className='grid-item1'>
-              <input style={{height:'30px'}} type="text" name="user_name" />
+              <input className='input' type="text" name="user_name" />
             </div>
             <div className='grid_label'>
               <label htmlFor='email'>Email:</label>
             </div>
             <div className='grid-item1'>
-              <input style={{height:'30px'}} type="email" name="user_email" />
+              <input className='input' type="email" name="user_email" />
             </div>
             <div className='grid_label'>
               <label htmlFor='message'>Message:</label>
@@ -63,7 +80,7 @@ const Contact = () => {
             </div>
           </div>
           <div className='center c1'>
-            <input
+            <input className='border-with-grad'
               type="submit"
               value='Send Me a Message' />
           </div>
