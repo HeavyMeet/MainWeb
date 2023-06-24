@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <div style={{ color }}>
       <h3 className='titles'>Contact</h3>
-      <div id='contact' className='flex-container' style={{marginBottom: !/Mobi/.test(userAgent) ? '200px': '600px'}}>
+      <div id='contact' className='flex-container' style={{marginBottom: /Mobi/.test(userAgent) === false ? '200px': '600px'}}>
         <form ref={form} className='form' onSubmit={handleSubmit}>
           <div className='center'>
             <p>Contact Form</p>
