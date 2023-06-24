@@ -210,11 +210,6 @@ h1 {
   margin: 0;
 }
 
-@media (max-width: 495px) {
-  #anim{
-    display: none;
-  }
-}
 
 .span1,.span2 {
   display: inline-block;
