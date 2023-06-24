@@ -11,7 +11,7 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext)
   const [color, setColor] = useState('');
   const [filter, setFilter] = useState('');
-  const social_net = [{ id: 1, link:'//www.linkedin.com/in/erick-d-573560212/', logo: linkedin }, { id: 2, link:'https://github.com/HeavyMeet',logo: github }, { id: 3, link:'https://twitter.com/____DanyBoy', logo: twitter }]
+  const social_net = [{ id: 1, link:'//www.linkedin.com/in/erick-real-573560212/', logo: linkedin }, { id: 2, link:'https://github.com/HeavyMeet',logo: github }, { id: 3, link:'https://twitter.com/____DanyBoy', logo: twitter }]
   const userAgent = navigator.userAgent;
   useEffect(() => {
     if (theme === 'dark') {
@@ -70,18 +70,17 @@ const Contact = () => {
         </form>
         <div className='con'>
           <div style={{ marginLeft: '70px' }}>
-            <svg className='svg' viewBox="0 11 190 10">
-
+            <svg className='svg' viewBox="0 11 190 12">
               <text style={{ stroke: color }} y='50'>Social</text>
             </svg>
-            <svg className='svg1' viewBox="0 15 190 50">
-              <text style={{ animation: '8s pulsat infinite', stroke: color }} y='50'>Networks</text>
+            <svg className='svg1' viewBox="0 15 190 1">
+              <text className='text_sn' style={{ stroke:color}}>Networks</text>
             </svg>
           </div>
           <div className='sn'>
             {social_net.map(i =>
               <div className='snww' style={{ filter }} key={i.id}>
-                <a href={i.link} target="_blank"><img style={{ width: '4em' }} src={i.logo} alt='linkedin' /></a>
+                <a href={i.link} target="_blank"><img className='img_social_net' src={i.logo} alt='linkedin' /></a>
               </div>
             )}
           </div>

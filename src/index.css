@@ -556,6 +556,11 @@ text{
   padding-right: 20px;
 }
 
+.text_sn {
+  animation: 8s pulsat infinite;
+  transform: translate(0, 20px);
+}
+
 @keyframes pulsate {
   50%{ stroke-width:5px }
 }
@@ -564,15 +569,37 @@ text{
   50%{ stroke-width:3.5px }
 }
 
-
-@media only screen and (max-width: 741px) {
-  /* .text_area {
-    font-size: large;
-    width: 450px;
-    height: 200px;
-    resize: both;
-  } */
+.img_social_net {
+  width:4em;
 }
+
+@media only screen and (max-width: 550px) {
+  .svg{
+   font   : bold 40px Century Gothic, Arial;
+   margin:0;
+ }
+ 
+ .svg1{
+   font   : bold 28px Century Gothic, Arial;
+ }
+
+ .snww{
+  margin-top: -10px;
+}
+
+ @keyframes pulsate {
+  50%{ stroke-width:4px }
+}
+
+@keyframes pulsat {
+  50%{ stroke-width:2.5px }
+}
+
+.img_social_net {
+  width:2em;
+}
+
+ }
 
 input[type=text], input[type=email]{
   font-size: large;
