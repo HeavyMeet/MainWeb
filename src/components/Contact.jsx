@@ -55,9 +55,6 @@ const Contact = () => {
       <h3 className='titles'>Contact</h3>
       <div id='contact' className='flex-container' style={{marginBottom: /Mobi/.test(userAgent) === false ? '200px': '600px'}}>
         <form ref={form} className='form' onSubmit={handleSubmit}>
-          <div className='center'>
-            <p>Contact Form</p>
-          </div>
           <div className='grid-container1'>
             <div className='grid_label'>
               <label htmlFor='name'>Name:</label>
@@ -76,10 +73,9 @@ const Contact = () => {
             </div>
             <div className="textarea-container">
               <textarea style={{height:'140px'}}></textarea>
-              <div id="textCopy"></div>
             </div>
           </div>
-          <div className='center c1'>
+          <div className='center'>
             <input className='border-with-grad'
               type="submit"
               value='Send Me a Message' />
