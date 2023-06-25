@@ -428,12 +428,11 @@ p {
   height:30px;
   min-width: 320px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .grid-item1 {
   padding: 15px 10px;
-  width: 330px;
-  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -587,6 +586,13 @@ input[type=submit]:hover {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
+  }
+
+  .input {
+    height:30px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 }
 
