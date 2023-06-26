@@ -3,10 +3,11 @@ import emailjs from '@emailjs/browser';
 import linkedin from '../assets/linkedin.svg';
 import twitter from '../assets/twitter.svg';
 import github from '../assets/github.svg';
-import { ThemeContext } from '../context/ThemeProvider'
+import { ThemeContext } from '../context/ThemeProvider';
 
 const Contact = () => {
   const form = useRef();
+
 
   const { theme } = useContext(ThemeContext)
   const [color, setColor] = useState('');
@@ -40,13 +41,13 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    emailjs.sendForm('service_6k1fu8h', 'template_14e2dww', form.current, 'ANPsZcaqeMECILMgT')
+    emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_USER_ID)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
-    form.current.reset();
+    //  form.current.reset();
 
   }
 
