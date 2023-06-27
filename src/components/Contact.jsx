@@ -49,9 +49,8 @@ const Contact = () => {
     setFlag(false)
     const input = document.querySelector('.input');
     const textA = document.querySelector('textarea[name="message"]');
-    console.log(import.meta.env.VITE_USER_ID, import.meta.env.VITE_TEMPLATE, import.meta.env.VITE_SERVICE," jj2j2j2 ")
     if(input.value !== '' && textA.value !== ''){
-      emailjs.sendForm('service_t1zbqe8', 'template_exy7kpr', form.current, 'hawUhGaBT4syUMLPn')
+      emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_USER_ID)
       .then((result) => {
 
         console.log(result.text);
@@ -60,7 +59,7 @@ const Contact = () => {
       });
       form.current.reset();
 
-      setMsg('You havehhh sent your message. Thanks!')    
+    setMsg('You have sent your message. Thanks!')    
     setTimeout(()=>
     setFlag(true)
     ,3000)  
