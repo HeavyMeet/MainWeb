@@ -58,7 +58,7 @@ const Contact = () => {
       });
       form.current.reset();
 
-      setMsg('You have sent your message. Thanks!')    
+      setMsg('You havehhh sent your message. Thanks!')    
     setTimeout(()=>
     setFlag(true)
     ,3000)  
