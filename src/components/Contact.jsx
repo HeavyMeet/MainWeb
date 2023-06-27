@@ -7,15 +7,17 @@ import { ThemeContext } from '../context/ThemeProvider';
 
 const Contact = () => {
   const form = useRef();
-
-
   const { theme } = useContext(ThemeContext)
   const [color, setColor] = useState('');
   const [filter, setFilter] = useState('');
+  const [flag, setFlag] = useState(true);
+  const [msg, setMsg] = useState('');
   const social_net = [{ id: 1, link:'//www.linkedin.com/in/erick-real-573560212/', logo: linkedin }, { id: 2, link:'https://github.com/HeavyMeet',logo: github }, { id: 3, link:'https://twitter.com/____DanyBoy', logo: twitter }]
   const userAgent = navigator.userAgent;
+  
   useEffect(() => {
     const btnForm = document.querySelector(".border-with-grad");
+    // const msgForm = document.querySelector("#msg");
     if (theme === 'dark') {
       setColor('white')
       setFilter('invert(90%)')
@@ -26,6 +28,7 @@ const Contact = () => {
       btnForm.addEventListener("mouseleave", function( event ) {   
         event.target.style.textShadow = "";
       }, false);  
+      // msgForm.style.color='#9ABDDF'
     } else {
       setColor('#403d3d')
       setFilter('invert(15%)')
@@ -36,19 +39,35 @@ const Contact = () => {
       btnForm.addEventListener("mouseleave", function( event ) {   
         event.target.style.textShadow = "";
       }, false);
+      // msgForm.style.color='#403d3d'
     }
   }, [theme]);
 
   const handleSubmit = e => {
     e.preventDefault();
-    emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_USER_ID)
+    setFlag(false)
+    const input = document.querySelector('.input');
+    const textA = document.querySelector('textarea[name="message"]');
+    if(input.value !== '' && textA.value !== ''){
+      emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_USER_ID)
       .then((result) => {
+
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
-    //  form.current.reset();
+      form.current.reset();
 
+      setMsg('You have sent your message. Thanks!')    
+    setTimeout(()=>
+    setFlag(true)
+    ,3000)  
+    }else{
+      setMsg('Don´t let any field empty.')    
+      setTimeout(()=>
+      setFlag(true)
+      ,800)  
+    }
   }
 
   return (
@@ -61,26 +80,31 @@ const Contact = () => {
               <label htmlFor='name'>Name:</label>
             </div>
             <div className='grid-item1'>
-              <input className='input' type="text" name="user_name" />
+              <input className='input' type="text" name="user_name"/>
             </div>
             <div className='grid_label'>
               <label htmlFor='email'>Email:</label>
             </div>
             <div className='grid-item1'>
-              <input className='input' type="email" name="user_email" />
+              <input className='input' type="email" name="user_email"/>
             </div>
             <div className='grid_label'>
               <label htmlFor='message'>Message:</label>
             </div>
             <div className="textarea-container">
-              <textarea style={{height:'140px'}}></textarea>
+              <textarea style={{height:'140px'}} name="message"></textarea>
             </div>
           </div>
+          {flag ?
           <div className='center'>
             <input className='border-with-grad'
               type="submit"
-              value='Send Me a Message' />
+              value='Send Me a Message'
+              />
           </div>
+           :
+           <div id='msg' className='center'>{msg}</div>
+           }
         </form>
         <div className='con'>
           <div className='sn_div'>
