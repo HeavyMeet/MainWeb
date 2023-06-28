@@ -49,8 +49,9 @@ const Contact = () => {
     setFlag(false)
     const input = document.querySelector('.input');
     const textA = document.querySelector('textarea[name="message"]');
+    console.log(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_API_KEY)
     if(input.value !== '' && textA.value !== ''){
-      emailjs.sendForm(process.env.SERVICE, process.env.TEMPLATE, form.current, process.env.API_KEY)
+      emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_API_KEY)
       .then((result) => {
 
         console.log(result.text);
