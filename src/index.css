@@ -206,7 +206,7 @@ h1 {
 #anim {
   bottom: -140px;
   right: 150px;
-  content: url(../src//assets/mano.gif);
+  content: url(../src//assets/gifmody.gif);
   position: absolute;
   margin: 0;
 }
@@ -290,7 +290,7 @@ h1 {
   }
 
   #anim {
-    content: url(../src//assets/manl.gif);
+    content: url(../src//assets/gifmody.gif);
     position: absolute;
     left: 0;
     right: 0;
@@ -581,7 +581,7 @@ input[type=submit]:hover {
   }
 
   #anim {
-    content: url(../src//assets/manl.gif);
+    content: url(../src//assets/gifmody.gif);
     position: absolute;
     left: 0;
     right: 0;
@@ -611,7 +611,7 @@ input[type=submit]:hover {
   }
 
   #anim {
-    content: url(../src//assets/manl.gif);
+    content: url(../src//assets/gifmody.gif);
     position: absolute;
     left: 0;
     right: 0;
