@@ -204,8 +204,8 @@ h1 {
 }
 
 #anim {
-  bottom: -140px;
-  right: 150px;
+  bottom: 0rem;
+  right: -8rem;
   content: url(../src//assets/gifmody.gif);
   position: absolute;
   margin: 0;
@@ -288,7 +288,9 @@ h1 {
     position: relative;
     margin: 90px 0 400px 0;
   }
+}
 
+@media only screen and (max-width: 1510px) {
   #anim {
     content: url(../src//assets/gifmody.gif);
     position: absolute;
@@ -296,7 +298,7 @@ h1 {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 120%;
+    top: 70%;
   }
 }
 
@@ -619,7 +621,7 @@ input[type=submit]:hover {
     margin-right: auto;
     top: 120%;
   }
-  
+
   h2 {
     font-size: 1.6rem;
   }
@@ -658,7 +660,7 @@ input[type=submit]:hover {
     display:grid;
     grid-template-columns: auto 1fr;
   }
-  
+
   .flex-container {
     display: block;
   }
@@ -670,7 +672,7 @@ input[type=submit]:hover {
     padding: 0;
     margin: 0;
   }
-  
+
   .flex-container {
     padding-bottom: 200px;
   }
@@ -708,7 +710,7 @@ input[type=submit]:hover {
   .text_sn {
     transform: translate(0, 15px);
   }
-  
+
 
   @keyframes pulsate {
     50% {
@@ -755,7 +757,7 @@ input[type=submit]:hover {
   }
 
 
-  
+
 }
 
 input[type=text],
