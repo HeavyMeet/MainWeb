@@ -75,7 +75,7 @@ useEffect(() => {
           </div><div>
             <h1 style={{ padding: '0', margin: '70px 0px 0 10px' }}>
               <span className='span4' data-scroll data-scroll-direction="vertical" data-scroll-delay="0.05" data-scroll-speed="5">
-                <a href='https://drive.google.com/file/d/1Y_PhKCNzokQLB0OIQCIYpA4PQScGjIsL/view?usp=sharing' target="_blank">My CV</a>
+                <a href='https://drive.google.com/file/d/1Cf5qhqpARw1aSEIDHoImYzh5iGTScv4Q/view?usp=sharing' target="_blank">My CV</a>
               </span>
             </h1>
           </div></>
@@ -88,7 +88,7 @@ useEffect(() => {
           </h3>
           <h4 style={{ padding: '0', margin: '0px 0px 0 10px' }}>
               <span style={{fontSize:'25px'}}>
-                <a href='https://drive.google.com/file/d/1Y_PhKCNzokQLB0OIQCIYpA4PQScGjIsL/view?usp=sharing' target="_blank">My CV</a>
+                <a href='https://drive.google.com/file/d/1Cf5qhqpARw1aSEIDHoImYzh5iGTScv4Q/view?usp=sharing' target="_blank">My CV</a>
               </span>
             </h4>
           </> 

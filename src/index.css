@@ -300,6 +300,16 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 1550px) {
+   #anim {
+  right: -5em;
+  content: url(../src//assets/gifmody.gif);
+  position: absolute;
+  margin: 0;
+  z-index: 2;
+}
+}
+
 @keyframes animate {
   0% {
     left: -15%;
